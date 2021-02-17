@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".HomeActivity"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+        <ImageView
+            android:id="@+id/android_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/android"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="18dp"
+            android:adjustViewBounds="true"
+            />
+        <Button
+            android:id="@+id/android_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/android_course"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_back"
+            android:text="@string/android"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+
+            />
+        <ImageView
+            android:id="@+id/ios_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/android_button"
+            android:src="@drawable/ios"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="18dp"
+            android:adjustViewBounds="true"
+            />
+        <Button
+            android:id="@+id/ios_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ios_course"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_back"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="@string/ios"
+            />
+        <ImageView
+            android:id="@+id/full_stack_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ios_button"
+            android:src="@drawable/full_stack"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="18dp"
+            android:adjustViewBounds="true"
+            />
+        <Button android:id="@+id/full_stack_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/full_stack_course"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_back"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="@string/full_stack"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
